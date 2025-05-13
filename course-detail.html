@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الدورة | منصة التعلم الذكية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- القائمة العلوية -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>TheChapter</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="courses.html" class="active">الدورات</a></li>
+                <li><a href="dashboard.html">لوحة التحكم</a></li>
+                <li><a href="pricing.html">الأسعار</a></li>
+            </ul>
+            <div class="buttons">
+                <a href="dashboard.html" class="btn btn-primary">لوحة التحكم</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- تفاصيل الدورة -->
+    <section class="course-detail">
+        <div class="container">
+            <!-- رأس الدورة -->
+            <div class="course-header">
+                <div class="course-breadcrumb">
+                    <a href="courses.html" class="btn btn-sm btn-outline">
+                        <i class="fas fa-arrow-right ml-2"></i> العودة إلى الدورات
+                    </a>
+                    <div class="course-tags">
+                        <span class="tag primary-tag">تطوير الويب</span>
+                        <span class="tag">متقدم</span>
+                    </div>
+                </div>
+                
+                <h1>تطوير الويب المتقدم</h1>
+                <p>اتقن تقنيات تطوير الويب الحديثة مع هذه الدورة الشاملة التي تغطي أحدث التقنيات والأدوات المستخدمة في تطوير المواقع الإلكترونية المتقدمة.</p>
+                
+                <div class="course-progress-container">
+                    <div class="progress-info">
+                        <span>التقدم الخاص بك</span>
+                        <span>67%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 67%"></div>
+                    </div>
+                    <p class="modules-info">12 من 18 وحدة مكتملة</p>
+                </div>
+            </div>
+
+            <div class="course-detail-grid">
+                <!-- محتوى الدورة -->
+                <div class="course-content">
+                    <div class="course-card">
+                        <div class="card-header">
+                            <h2>محتوى الدورة</h2>
+                            <p>تحتوي هذه الدورة على 18 وحدة</p>
+                        </div>
+                        <div class="modules-accordion">
+                            <!-- وحدة 1 -->
+                            <div class="module-item">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <div class="module-icon">
+                                        <span class="module-number">1</span>
+                                    </div>
+                                    <div class="module-title">
+                                        <h3>مقدمة إلى تطوير الويب المتقدم</h3>
+                                        <span class="module-status completed">
+                                            <i class="fas fa-check-circle"></i> مكتمل
+                                        </span>
+                                    </div>
+                                    <div class="module-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="module-content">
+                                    <p>في هذه الوحدة، ستتعلم المفاهيم الأساسية والتطبيقات العملية لتطوير الويب المتقدم.</p>
+                                    <button class="btn btn-sm">مراجعة الوحدة</button>
+                                </div>
+                            </div>
+
+                            <!-- وحدة 2 -->
+                            <div class="module-item">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <div class="module-icon">
+                                        <span class="module-number">2</span>
+                                    </div>
+                                    <div class="module-title">
+                                        <h3>HTML5 المتقدم و Semantic Web</h3>
+                                        <span class="module-status completed">
+                                            <i class="fas fa-check-circle"></i> مكتمل
+                                        </span>
+                                    </div>
+                                    <div class="module-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="module-content">
+                                    <p>استكشف ميزات HTML5 المتقدمة وتعلم كيفية بناء صفحات ويب دلالية أكثر قابلية للوصول.</p>
+                                    <button class="btn btn-sm">مراجعة الوحدة</button>
+                                </div>
+                            </div>
+
+                            <!-- وحدة 3 -->
+                            <div class="module-item">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <div class="module-icon">
+                                        <span class="module-number">3</span>
+                                    </div>
+                                    <div class="module-title">
+                                        <h3>CSS المتقدم والرسوم المتحركة</h3>
+                                        <span class="module-status completed">
+                                            <i class="fas fa-check-circle"></i> مكتمل
+                                        </span>
+                                    </div>
+                                    <div class="module-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="module-content">
+                                    <p>تعلم تقنيات CSS المتقدمة وكيفية إنشاء رسوم متحركة سلسة وواجهات مستخدم تفاعلية.</p>
+                                    <button class="btn btn-sm">مراجعة الوحدة</button>
+                                </div>
+                            </div>
+
+                            <!-- وحدة 4 -->
+                            <div class="module-item">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <div class="module-icon">
+                                        <span class="module-number">4</span>
+                                    </div>
+                                    <div class="module-title">
+                                        <h3>JavaScript المتقدم</h3>
+                                        <span class="module-status current">
+                                            <i class="fas fa-play-circle"></i> قيد التقدم
+                                        </span>
+                                    </div>
+                                    <div class="module-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="module-content">
+                                    <p>استكشف مفاهيم JavaScript المتقدمة مثل الإغلاقات، النماذج، والتعامل مع API الحديثة.</p>
+                                    <button class="btn btn-sm btn-primary">متابعة التعلم</button>
+                                </div>
+                            </div>
+
+                            <!-- وحدة 5 -->
+                            <div class="module-item">
+                                <div class="module-header" onclick="toggleModule(this)">
+                                    <div class="module-icon">
+                                        <span class="module-number">5</span>
+                                    </div>
+                                    <div class="module-title">
+                                        <h3>إطارات عمل JavaScript الحديثة</h3>
+                                        <span class="module-status locked">
+                                            <i class="fas fa-lock"></i> مغلق
+                                        </span>
+                                    </div>
+                                    <div class="module-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="module-content">
+                                    <p>تعرف على إطارات العمل الحديثة مثل React وVue وAngular وكيفية استخدامها لبناء تطبيقات ويب متقدمة.</p>
+                                    <p class="locked-message">أكمل الوحدة السابقة لفتح هذه الوحدة.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- معلومات الدورة -->
+                <div class="course-sidebar">
+                    <div class="course-card">
+                        <div class="card-header">
+                            <h2>معلومات الدورة</h2>
+                        </div>
+                        <div class="card-content">
+                            <div class="course-info-item">
+                                <h3>إجمالي الوحدات</h3>
+                                <p>18 وحدة</p>
+                            </div>
+                            
+                            <div class="course-info-item">
+                                <h3>الفئة</h3>
+                                <p>تطوير الويب</p>
+                            </div>
+                            
+                            <div class="course-info-item">
+                                <h3>المستوى</h3>
+                                <p>متقدم</p>
+                            </div>
+                            
+                            <div class="course-button">
+                                <a href="#" class="btn btn-primary btn-block">متابعة التعلم</a>
+                                <p class="course-note">سجّل الآن لتتبع تقدمك واحصل على شهادة عند الانتهاء.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>TheChapter</span>
+                    </div>
+                    <p>أسست TheChapter في عام 2019 على يد مجموعة من المتخصصين في الرعاية الصحية الذين أدركوا الطلب على التعليم والتدريب عالي الجودة في صناعة الرعاية الصحية.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-group">
+                        <h4>المنتج</h4>
+                        <ul>
+                            <li><a href="#">الميزات</a></li>
+                            <li><a href="#">التكاملات</a></li>
+                            <li><a href="#">التحديثات</a></li>
+                            <li><a href="#">الأسئلة المتكررة</a></li>
+                            <li><a href="pricing.html">الأسعار</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>الشركة</h4>
+                        <ul>
+                            <li><a href="#">عن الشركة</a></li>
+                            <li><a href="#">المدونة</a></li>
+                            <li><a href="#">الوظائف</a></li>
+                            <li><a href="#">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>الموارد</h4>
+                        <ul>
+                            <li><a href="courses.html">الدورات</a></li>
+                            <li><a href="#">المجتمع</a></li>
+                            <li><a href="#">أدلة</a></li>
+                            <li><a href="#">المستندات</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>قانوني</h4>
+                        <ul>
+                            <li><a href="#">الخصوصية</a></li>
+                            <li><a href="#">الشروط</a></li>
+                            <li><a href="#">الأمان</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>&copy;theChapter© 2024 All Rights Reserved. 🇸🇦</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

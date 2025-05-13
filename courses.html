@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدورات | منصة التعلم الذكية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- القائمة العلوية -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>TheChapter</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="courses.html" class="active">الدورات</a></li>
+                <li><a href="dashboard.html">لوحة التحكم</a></li>
+                <li><a href="pricing.html">الأسعار</a></li>
+            </ul>
+            <div class="buttons">
+                <a href="dashboard.html" class="btn btn-primary">لوحة التحكم</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الدورات -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="courses-header">
+                <h1>الدورات التعليمية</h1>
+                <p>استكشف مجموعتنا المتنوعة من الدورات المصممة لمساعدتك على تطوير مهاراتك ومعرفتك.
+                    قم بالتصفية حسب الفئة أو مستوى الصعوبة أو ابحث عن مواضيع محددة.</p>
+            </div>
+
+            <!-- أدوات الفلترة -->
+            <div class="filters">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-courses" placeholder="ابحث عن الدورات...">
+                </div>
+                <div class="filter-box">
+                    <select id="category-filter">
+                        <option value="">جميع الفئات</option>
+                        <option value="web-development">تطوير الويب</option>
+                        <option value="data-science">علوم البيانات</option>
+                        <option value="machine-learning">تعلم الآلة</option>
+                        <option value="mobile-development">تطوير الجوال</option>
+                    </select>
+                </div>
+                <div class="filter-box">
+                    <select id="difficulty-filter">
+                        <option value="">جميع المستويات</option>
+                        <option value="beginner">مبتدئ</option>
+                        <option value="intermediate">متوسط</option>
+                        <option value="advanced">متقدم</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- شبكة الدورات -->
+            <div class="courses-grid" id="courses-grid">
+                <!-- دورة 1 -->
+                <div class="course-card" data-category="web-development" data-difficulty="advanced">
+                    <div class="course-header web-development"></div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">تطوير الويب</span>
+                            <span class="tag">متقدم</span>
+                        </div>
+                        <h3>تطوير الويب المتقدم</h3>
+                        <p>اتقن تقنيات تطوير الويب الحديثة مع هذه الدورة الشاملة.</p>
+                        <div class="course-progress">
+                            <div class="progress-info">
+                                <span>التقدم</span>
+                                <span>67%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 67%"></div>
+                            </div>
+                            <p class="modules-info">12 من 18 وحدة مكتملة</p>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <a href="course-detail.html?id=1" class="btn btn-primary btn-block">متابعة التعلم</a>
+                    </div>
+                </div>
+                
+                <!-- دورة 2 -->
+                <div class="course-card" data-category="data-science" data-difficulty="beginner">
+                    <div class="course-header data-science"></div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">علوم البيانات</span>
+                            <span class="tag">مبتدئ</span>
+                        </div>
+                        <h3>أساسيات علوم البيانات</h3>
+                        <p>تعلم أساسيات علوم البيانات والإحصاء وتعلم الآلة.</p>
+                        <div class="course-progress">
+                            <div class="progress-info">
+                                <span>التقدم</span>
+                                <span>53%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 53%"></div>
+                            </div>
+                            <p class="modules-info">8 من 15 وحدة مكتملة</p>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <a href="course-detail.html?id=2" class="btn btn-primary btn-block">متابعة التعلم</a>
+                    </div>
+                </div>
+                
+                <!-- دورة 3 -->
+                <div class="course-card" data-category="machine-learning" data-difficulty="intermediate">
+                    <div class="course-header machine-learning"></div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">تعلم الآلة</span>
+                            <span class="tag">متوسط</span>
+                        </div>
+                        <h3>أساسيات تعلم الآلة</h3>
+                        <p>مقدمة في مفاهيم وتطبيقات تعلم الآلة.</p>
+                        <div class="course-progress">
+                            <div class="progress-info">
+                                <span>التقدم</span>
+                                <span>25%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 25%"></div>
+                            </div>
+                            <p class="modules-info">3 من 12 وحدة مكتملة</p>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <a href="course-detail.html?id=3" class="btn btn-primary btn-block">متابعة التعلم</a>
+                    </div>
+                </div>
+                
+                <!-- دورة 4 -->
+                <div class="course-card" data-category="mobile-development" data-difficulty="intermediate">
+                    <div class="course-header mobile-development"></div>
+                    <div class="course-content">
+                        <div class="course-tags">
+                            <span class="tag">تطوير الجوال</span>
+                            <span class="tag">متوسط</span>
+                        </div>
+                        <h3>تطوير تطبيقات الجوال</h3>
+                        <p>بناء تطبيقات جوال متعددة المنصات من البداية.</p>
+                        <div class="course-progress">
+                            <div class="progress-info">
+                                <span>التقدم</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%"></div>
+                            </div>
+                            <p class="modules-info">0 من 14 وحدة مكتملة</p>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <a href="course-detail.html?id=4" class="btn btn-outline btn-block">عرض الدورة</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- رسالة عدم وجود نتائج -->
+            <div class="no-results" id="no-results" style="display: none;">
+                <p>لم يتم العثور على دورات تطابق معايير البحث.</p>
+                <button id="clear-filters" class="btn btn-outline">مسح الفلاتر</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>TheChapter</span>
+                    </div>
+                    <p>أسست TheChapter في عام 2019 على يد مجموعة من المتخصصين في الرعاية الصحية الذين أدركوا الطلب على التعليم والتدريب عالي الجودة في صناعة الرعاية الصحية.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-group">
+                        <h4>المنتج</h4>
+                        <ul>
+                            <li><a href="#">الميزات</a></li>
+                            <li><a href="#">التكاملات</a></li>
+                            <li><a href="#">التحديثات</a></li>
+                            <li><a href="#">الأسئلة المتكررة</a></li>
+                            <li><a href="pricing.html">الأسعار</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>الشركة</h4>
+                        <ul>
+                            <li><a href="#">عن الشركة</a></li>
+                            <li><a href="#">المدونة</a></li>
+                            <li><a href="#">الوظائف</a></li>
+                            <li><a href="#">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>الموارد</h4>
+                        <ul>
+                            <li><a href="courses.html">الدورات</a></li>
+                            <li><a href="#">المجتمع</a></li>
+                            <li><a href="#">أدلة</a></li>
+                            <li><a href="#">المستندات</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>قانوني</h4>
+                        <ul>
+                            <li><a href="#">الخصوصية</a></li>
+                            <li><a href="#">الشروط</a></li>
+                            <li><a href="#">الأمان</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>&copy;theChapter© 2024 All Rights Reserved. 🇸🇦</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

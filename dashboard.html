@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم | منصة التعلم الذكية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- القائمة العلوية -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>TheChapter</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="courses.html">الدورات</a></li>
+                <li><a href="dashboard.html" class="active">لوحة التحكم</a></li>
+                <li><a href="pricing.html">الأسعار</a></li>
+            </ul>
+            <div class="buttons">
+                <a href="dashboard.html" class="btn btn-primary">لوحة التحكم</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-layout">
+        <div class="container">
+            <div class="dashboard-container">
+                <!-- القائمة الجانبية -->
+                <aside class="dashboard-sidebar">
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-item active">
+                            <a href="dashboard.html">
+                                <i class="fas fa-chart-line"></i>
+                                <span>لوحة التحكم</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="dashboard-courses.html">
+                                <i class="fas fa-book"></i>
+                                <span>دوراتي</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="dashboard-recommendations.html">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>توصيات ذكية</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="dashboard-achievements.html">
+                                <i class="fas fa-trophy"></i>
+                                <span>الإنجازات</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="dashboard-certificates.html">
+                                <i class="fas fa-file-alt"></i>
+                                <span>الشهادات</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="dashboard-settings.html">
+                                <i class="fas fa-cog"></i>
+                                <span>الإعدادات</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- المحتوى الرئيسي -->
+                <main class="dashboard-main">
+                    <div class="dashboard-header">
+                        <h1>لوحة التعلم الخاصة بك</h1>
+                        <p>تتبع رحلة التعلم الخاصة بك</p>
+
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="بحث عن الدورات...">
+                        </div>
+                    </div>
+
+                    <!-- بطاقات الإحصائيات -->
+                    <div class="stats-cards">
+                        <div class="stat-card">
+                            <div class="stat-content">
+                                <div class="stat-info">
+                                    <p class="stat-label">إكمال الدورات</p>
+                                    <h3 class="stat-value">68.2%</h3>
+                                </div>
+                                <div class="stat-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 68.2%"></div>
+                            </div>
+                            <p class="stat-trend positive">
+                                <i class="fas fa-arrow-up"></i> +4.7% من الأسبوع الماضي
+                            </p>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-content">
+                                <div class="stat-info">
+                                    <p class="stat-label">الدورات النشطة</p>
+                                    <h3 class="stat-value">4</h3>
+                                </div>
+                                <div class="stat-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                            </div>
+                            <div class="course-categories">
+                                <div class="category-item">
+                                    <span class="category-dot web-dot"></span>
+                                    <span class="category-name">تطوير الويب</span>
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-dot data-dot"></span>
+                                    <span class="category-name">علوم البيانات</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-content">
+                                <div class="stat-info">
+                                    <p class="stat-label">مدة التعلم</p>
+                                    <h3 class="stat-value">12 يوم</h3>
+                                </div>
+                                <div class="stat-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                            </div>
+                            <div class="streak-chart">
+                                <div class="streak-bar" style="height: 40%"></div>
+                                <div class="streak-bar" style="height: 65%"></div>
+                                <div class="streak-bar" style="height: 30%"></div>
+                                <div class="streak-bar" style="height: 80%"></div>
+                                <div class="streak-bar" style="height: 50%"></div>
+                                <div class="streak-bar" style="height: 70%"></div>
+                                <div class="streak-bar" style="height: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- مخطط التقدم -->
+                    <div class="progress-chart-section">
+                        <div class="chart-header">
+                            <h2>تقدم التعلم</h2>
+                            <div class="chart-controls">
+                                <button class="chart-btn active" data-period="week">أسبوع</button>
+                                <button class="chart-btn" data-period="month">شهر</button>
+                                <button class="chart-btn" data-period="year">سنة</button>
+                            </div>
+                        </div>
+                        <div class="chart-container" id="learning-chart">
+                            <canvas id="progressChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- الدورات الحالية -->
+                    <div class="current-courses-section">
+                        <div class="section-header">
+                            <h2>الدورات الحالية</h2>
+                            <a href="courses.html" class="view-all">عرض الكل</a>
+                        </div>
+
+                        <div class="course-list">
+                            <!-- دورة 1 -->
+                            <div class="course-item">
+                                <div class="course-icon web-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="course-info">
+                                    <h3>تطوير الويب المتقدم</h3>
+                                    <p>12 من 18 وحدة مكتملة</p>
+                                </div>
+                                <div class="course-progress">
+                                    <div class="progress-info">
+                                        <span>التقدم</span>
+                                        <span>67%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 67%"></div>
+                                    </div>
+                                </div>
+                                <a href="course-detail.html?id=1" class="btn btn-sm">متابعة</a>
+                            </div>
+
+                            <!-- دورة 2 -->
+                            <div class="course-item">
+                                <div class="course-icon data-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <div class="course-info">
+                                    <h3>أساسيات علوم البيانات</h3>
+                                    <p>8 من 15 وحدة مكتملة</p>
+                                </div>
+                                <div class="course-progress">
+                                    <div class="progress-info">
+                                        <span>التقدم</span>
+                                        <span>53%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 53%"></div>
+                                    </div>
+                                </div>
+                                <a href="course-detail.html?id=2" class="btn btn-sm">متابعة</a>
+                            </div>
+
+                            <!-- دورة 3 -->
+                            <div class="course-item">
+                                <div class="course-icon ml-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="course-info">
+                                    <h3>أساسيات تعلم الآلة</h3>
+                                    <p>3 من 12 وحدة مكتملة</p>
+                                </div>
+                                <div class="course-progress">
+                                    <div class="progress-info">
+                                        <span>التقدم</span>
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 25%"></div>
+                                    </div>
+                                </div>
+                                <a href="course-detail.html?id=3" class="btn btn-sm">متابعة</a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>TheChapter</span>
+                    </div>
+                    <p>أسست TheChapter في عام 2019 على يد مجموعة من المتخصصين في الرعاية الصحية الذين أدركوا الطلب على التعليم والتدريب عالي الجودة في صناعة الرعاية الصحية.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-group">
+                        <h4>المنتج</h4>
+                        <ul>
+                            <li><a href="#">الميزات</a></li>
+                            <li><a href="#">التكاملات</a></li>
+                            <li><a href="#">التحديثات</a></li>
+                            <li><a href="#">الأسئلة المتكررة</a></li>
+                            <li><a href="pricing.html">الأسعار</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>الشركة</h4>
+                        <ul>
+                            <li><a href="#">عن الشركة</a></li>
+                            <li><a href="#">المدونة</a></li>
+                            <li><a href="#">الوظائف</a></li>
+                            <li><a href="#">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>الموارد</h4>
+                        <ul>
+                            <li><a href="courses.html">الدورات</a></li>
+                            <li><a href="#">المجتمع</a></li>
+                            <li><a href="#">أدلة</a></li>
+                            <li><a href="#">المستندات</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>قانوني</h4>
+                        <ul>
+                            <li><a href="#">الخصوصية</a></li>
+                            <li><a href="#">الشروط</a></li>
+                            <li><a href="#">الأمان</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>&copy;theChapter© 2024 All Rights Reserved. 🇸🇦</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
